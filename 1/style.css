@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -14,15 +15,22 @@ body {
 }
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     height: 50px;
     background-color: #bfdfe3;
 }
 
 .search {
-   
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-right: 44px;
 }
@@ -57,6 +65,8 @@ header {
 }
 
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
 }
@@ -110,7 +120,7 @@ a {
 }
 
 a:hover {
-    color:#e1e1e1;
+    color: #e1e1e1;
 }
 
 .chat {
@@ -120,6 +130,8 @@ a:hover {
 }
 
 .chat__avatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 24px;
     padding: 14px 32px;
@@ -131,8 +143,15 @@ a:hover {
 }
 
 .chat__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 6px;
 }
@@ -148,16 +167,27 @@ a:hover {
 }
 
 .chat__message {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 42px;
     padding: 14px 32px;
 }
 
 .chat__message-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 48px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
@@ -188,7 +218,11 @@ a:hover {
 }
 
 .chat__week {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -253,7 +287,12 @@ footer {
 
     .chat__message-content {
         gap: 28px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 }
